@@ -1,6 +1,6 @@
-// import Header from './Header'
-// import Footer from './Footer'
-// import MainContent from './MainContent'
+import Header from './Header'
+import Footer from './Footer'
+import MainContent from './MainContent'
 
 function App() {
   return (
