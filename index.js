@@ -1,17 +1,16 @@
-// ReactDOM.render(<h1>Hello, everyone!</h1>, document.getElementById("root"))
-
-import React from "react"
-import ReactDOM from "react-dom"
-
-const navbar = (
-    <nav>
-        <h1>Bob's Bistro</h1>
-        <ul>
-            <li>Menu</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
+const page = (
+  <div>
+    <img src="./react-icon.png" width="40px"></img>
+    <h1>Fun Facts About React</h1>
+    <ul>
+      <li>Was first originally released in 2013</li>
+      <li>Originally created by Jordan Wilkes</li>
+      <li>Has well over 100k stars on GitHub</li>
+      <li>Is maintained by FB</li>
+      <li>Powers thousands of enterprise apps</li>
+    </ul>
+  </div>
 )
 
-ReactDOM.render(navbar, document.getElementById("root"))
+
+ReactDOM.render(page, document.getElementById("root"))
