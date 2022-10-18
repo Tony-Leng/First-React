@@ -1,16 +1,48 @@
-const page = (
-  <div>
-    <img src="./react-icon.png" width="40px"></img>
-    <h1>Fun Facts About React</h1>
-    <ul>
-      <li>Was first originally released in 2013</li>
-      <li>Originally created by Jordan Wilkes</li>
-      <li>Has well over 100k stars on GitHub</li>
-      <li>Is maintained by FB</li>
-      <li>Powers thousands of enterprise apps</li>
-    </ul>
-  </div>
-)
+function Header() {
+  return (
+      <header>
+          <nav className="nav">
+              <img src="./react-logo.png" className="nav-logo" />
+              <ul className="nav-items">
+                  <li>Pricing</li>
+                  <li>About</li>
+                  <li>Contact</li>
+              </ul>
+          </nav>
+      </header>
+  )
+}
 
+function Footer() {
+  return (
+      <footer>
+          <small>© 2021 Ziroll development. All rights reserved.</small>
+      </footer>
+  )
+}
 
-ReactDOM.render(page, document.getElementById("root"))
+function MainContent() {
+  return (
+      <div>
+          <h1>Reasons I'm excited to learn React</h1>
+          <ol>
+              <li>It's a popular library, so I'll be
+              able to fit in with the cool kids!</li>
+              <li>I'm more likely to get a job as a developer
+              if I know React</li>
+          </ol>
+      </div>
+  )
+}
+
+function Page() {
+  return (
+      <div>
+          <Header />
+          <MainContent />
+          <Footer />
+      </div>
+  )
+}
+
+ReactDOM.render(<Page />, document.getElementById("root"))
